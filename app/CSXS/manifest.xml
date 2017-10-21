@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.appleskiller.AIAddon" ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="AIAddon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.appleskiller.AIAddon.extension" Version="1.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="ILST" Version="[17.0,99.9]" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="7.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.appleskiller.AIAddon.extension">
+			<DispatchInfo >
+				<Resources>
+					<MainPath>./index.html</MainPath>
+					<ScriptPath>./jsx/Illustrator.jsx</ScriptPath>
+					<CEFCommandLine>
+						<Parameter>--enable-nodejs</Parameter>
+					</CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type><!-- 设置扩展显示为面板模式-->
+					<Menu>AIAddon</Menu><!-- 设置扩展标题-->
+					<Geometry>
+						<Size><!-- 设置扩展面板尺寸-->
+							<Height>800</Height>
+							<Width>800</Width>
+						</Size>
+						<MinSize>
+							<Height>600</Height>
+							<Width>425</Width>
+						</MinSize>
+					</Geometry>
+					<Icons><!-- 设置扩展面板图标-->
+                        <Icon Type="Normal">./images/shujuguan.png</Icon>
+						<Icon Type="RollOver">./images/shujuguan.png</Icon>
+                        <Icon Type="DarkNormal">./images/shujuguan.png</Icon>
+						<Icon Type="DarkRollOver">./images/shujuguan.png</Icon>
+                    </Icons>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

@@ -1,0 +1,15 @@
+{
+  "name": "shujuguan-illustrator-addon",
+  "version": "1.0.0",
+  "description": "Shujuguan Illustrator-addon",
+  "main": "dist/shujuguan-illustrator-addon.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "appleskiller",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {}
+}
