@@ -22,11 +22,11 @@ $ defaults write com.adobe.CSXS.7 PlayerDebugMode 1
 #### Debug工作目录
 * Windows
 ```
-C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP\extensions\
+C:\Users\<USERNAME>\AppData\Roaming\Adobe\CEP\extensions
 ```
 * OS X
 ```
-/Library/Application Support/Adobe/CEP/extensions/
+/Users/<USERNAME>/Library/Application Support/Adobe/CEP/extensions
 ```
 #### Debug in Chrome
 在Debug工作目录的.debug文件（如果没有就创建一个）中设置端口号，然后访问http://localhost:8000。
